@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#hero">Header</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header id="hero">
+      <div>
+        <h1>Kedai Kopi ABC</h1>
+        <p>Sebuah kopi hitam disajikan hangat</p>
+      </div>
+
+      <img src="images/hero-banner.jpg" alt="banner" height="400px" />
+    </header>
+
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <ol id="menu">
+        <li>Cappucino</li>
+        <li>Frappucino</li>
+        <li>Espresso</li>
+        <li>V60</li>
+      </ol>
+    </section>
+
+    <section id="pricelist">
+      <h2>Pricelist</h2>
+      <table>
+        <tr>
+          <th>Nama</th>
+          <th>Harga</th>
+          <th>Tingkat Pahit</th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>Cappucino</td>
+            <td>15.000</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Frappucino</td>
+            <td>17.000</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Espresso</td>
+            <td>12.000</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>V60</td>
+            <td>20.000</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="reservation">
+      <h2>Reservation</h2>
+      <form action="">
+        <div>
+          <label for="nama">Nama: </label>
+          <input type="text" id="nama" />
+        </div>
+        <div>
+          <label for="reserve_date">Tanggal pesan:</label>
+          <input type="date" />
+        </div>
+        <div>
+          <label for="gender">Gender: </label>
+          <input type="radio" name="gender" id="pria" value="Pria" /> Pria
+          <input type="radio" name="gender" id="wanita" value="Wanita" /> Wanita
+        </div>
+        <div>
+          <label for="pax_amount">Berapa orang: </label>
+          <select name="pax_amount" id="pax_amount">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <div>
+          <label for="note">Catatan: </label>
+          <textarea name="note" id="note"></textarea>
+        </div>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+
+    <footer>
+      <p>Dibuat dengan cinta by dia</p>
+    </footer>
+  </body>
+</html>
